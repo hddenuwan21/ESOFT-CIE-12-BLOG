@@ -1,0 +1,140 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.search {
+  height: 40vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.search::before, .search img, .lightbox {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.search::before {
+  content: "";
+  z-index: 1;
+  background: rgba(0,0,0,0.25);
+}
+.search img {
+  object-fit: cover;
+}
+.search .content {
+  z-index: 2;
+  color: #fff;
+  padding: 0 13px;
+  text-align: center;
+  position: relative;
+}
+.search h1 {
+  font-size: 2.65rem;
+  font-weight: 600;
+}
+.search p {
+  margin-top: 8px;
+  font-size: 1.5rem;
+}
+.search .search-box {
+  height: 55px;
+  margin: 45px 0;
+  position: relative;
+}
+
+.texp p{
+padding: 10% 0%;
+    font-size:1rem;
+ }
+.back-home{
+    font-size: 0.9rem;
+    display: flex;
+    justify-content:center;
+    background: #eee9e9;
+    padding: 10px;
+    color: #000000;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+ }
+ .back-home:hover{
+    background: rgb(255, 166, 0);
+    color: #fff;
+ }
+ .back-home i{
+    padding: 0 10px;
+ }
+
+ .all{
+   color: #ffffff;
+    text-align: center;
+   
+    background: rgba(255, 166, 0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+   
+ }
+
+/* (A) GALLERY WRAPPER */
+/* (A1) BIG SCREENS - 3 IMAGES PER ROW */
+.gallery {
+ padding: 4%;
+ display: grid;
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* horizontal center */
+  
+}
+ 
+/* (A2) SMALL SCREENS - 2 IMAGES PER ROW */
+@media screen and (max-width: 768px) {
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+/* (B) GALLERY VIDEOS */
+/* (B1) THUMBNAIL VIDEO */
+.gallery video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* fill | contain | cover | scale-down */
+  cursor: pointer;
+  
+}
+ 
+/* (B2) FULLSCREEN VIDEO */
+.gallery video.full {
+  position: fixed;
+  top: 0; left: 0; z-index: 999;
+  width: 100vw; height: 100vh;
+  background: #000000;
+ 
+  object-fit: scale-down;
+}
+ 
+/* (C) EXIT FULLSCREEN */
+#vClose {
+  position: fixed; display: none;
+  top: 0; right: 0; z-index: 9999;
+  font-size: 20px; font-weight: 700;
+  padding: 10px 15px;
+  color: #fff;
+  background:rgb(255, 166, 0);
+  cursor: pointer;
+  border-radius: 10%;
+}
+#vClose.show { display: block; }
+ 
+/* (D) CAPTION */
+.vWrap {
+  color: #fff;
+  background: #000;
+  border-radius: 3%;
+}
+.vCaption { padding: 10px; }
