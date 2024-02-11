@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LInk rel="shortcut icon" type="x-icon" href="logo.png"></LInk>
+    <title>CIE BLOG</title>
+   <link rel="stylesheet" href="css/video.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href='http://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+     />
+
+     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+</head>
+<body>
+   
+      <section class="search">
+        <img src="https://wallpaperaccess.com/full/3830833.jpg" alt="search-img">
+        <div class="content">
+          <h1>Power point design ideas</h1>
+          <a href="333.html" class="back-home"> Back<span><i class="fa-sharp fa-solid fa-arrow-rotate-left"></i></span></a>
+          <br>
+         
+        </div>
+      </section>
+      <div id="vClose" onclick="vplay.toggle(false)">X</div>
+  
+      <!-- (B) VIDEO GALLERY -->
+      <div class="gallery">
+        <div class="vWrap">
+          <video src="video/0801.mp4"></video>
+          <div class="vCaption">Idea 1 (part 1) <i class="fa-solid fa-hand-pointer"></i></div>
+        </div>
+        <div class="vWrap">
+          <video src="video/0803(1).mp4"></video>
+          <div class="vCaption">Idea 1 (part 2) <i class="fa-solid fa-hand-pointer"></i></div>
+        </div>
+        <div class="vWrap">
+          <video src="video/0808(1).mp4"></video>
+          <div class="vCaption">Idea 2 <i class="fa-solid fa-hand-pointer"></i></div>
+        </div>
+        <div class="vWrap">
+          <video src="video/0803(2).mp4"></video>
+          <div class="vCaption">Idea 3 (part 1) <i class="fa-solid fa-hand-pointer"></i></div>
+        </div>
+        <div class="vWrap">
+          <video src="video/0803(3).mp4"></video>
+          <div class="vCaption">Idea 3 (part 1) <i class="fa-solid fa-hand-pointer"></i></div>
+        </div>
+        
+      </div>
+    
+      <script>
+        var vplay = {
+      // (A) INIT - CLICK VIDEO TO GO FULL SCREEN
+      init : () => { for (let v of document.querySelectorAll(".gallery video")) {
+        v.onclick = () => {
+          if (!v.classList.contains("full")) { vplay.toggle(v); }
+        };
+      }},
+      
+      // (B) TOGGLE FULLSCREEN
+      toggle : e => {
+        // (B1) TOGGLE CLOSE BUTTON
+        document.getElementById("vClose").classList.toggle("show");
+      
+        // (B2) TOGGLE VIDEO
+        let v = e===false ? document.querySelector(".gallery .full") : e ;
+        v.classList.toggle("full");
+        v.controls = e===false ? false : true ;
+        if (e===false) { v.pause(); }
+      }
+      };
+      window.onload = vplay.init;
+      </script>
+</body>
+</html>

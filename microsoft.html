@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LInk rel="shortcut icon" type="x-icon" href="logo.png"></LInk>
+    <title>CIE BLOG</title>
+    <link rel="stylesheet" href="css/microsoft.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href='http://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+     />
+
+     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+<body>
+
+  <header>
+   
+    <img src="logo.png" class="lpng">
+      
+     <div class="navbar"> 
+      <div class="container">
+       
+      </div>
+         
+          <ul class="links">
+            <li><a href="blog.html">Home</a></li>
+            <li><a href="333.html">Blog</a></li>
+            <li><a href="services">About</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+        <a href="login.html" class="action_btn">login</a>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        
+   </div> 
+   <div class="dropdown_menu">
+   <li><a href="blog.html">Home</a></li>
+   <li><a href="333.html">Blog</a></li>
+   <li><a href="services">About</a></li>
+   <li><a href="contact">Contact</a></li>
+   <li><a href="login.html" class="action_btn">Login</a></li>
+   <label  id="dark-change"></label>
+   <li><div class="darkmode">Dark Mode</div></li>
+  
+</div> 
+  
+  </header>
+
+<section class="home" id="home">
+<div class="home-text container">
+    <h2 class="home-title">THE BLOG
+     
+    
+    </h2>
+    </h2>
+    <span class="home-subtitle">CI12 student project 2023</span>
+</div>
+</section>
+
+
+<div class="post-box tech">
+
+    
+<a href="333.html" class="back-home"> Back<span><i class="fa-sharp fa-solid fa-arrow-rotate-left"></i></span></a>
+<img src = "https://wallpaperaccess.com/full/3718971.png" alt = "post">
+  <h2 class="category">2016</h2>
+  <div class="title">Easy Methods to Activate Office 2016</div>
+  
+  <p class="post-decription">Step 1: Temporary disable Windows Defender and AntiVirus. It is needed for they don’t block the Activator.</p>
+    
+    <p>Step 2: You copy the following code into a new text document.</p>
+    <div class="text-boxes">
+      <div class="text-box HTMLBox">
+        <div class="topic">CMD Code:</div>
+        <textarea id="HTMLBox" readonly>
+          @echo off
+          title Activate Microsoft Office 2016 ALL versions for FREE!&cls&echo ============================================================================&echo #Project: Activating Microsoft software products for FREE without software&echo ============================================================================&echo.&echo #Supported products:&echo - Microsoft Office Standard 2016&echo - Microsoft Office Professional Plus 2016&echo.&echo.&(if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16")&(if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16")&(for /f %%x in ('dir /b ..\root\Licenses16\proplusvl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&(for /f %%x in ('dir /b ..\root\Licenses16\proplusvl_mak*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&echo.&echo ============================================================================&echo Activating your Office...&cscript //nologo ospp.vbs /unpkey:WFG99 >nul&cscript //nologo ospp.vbs /unpkey:DRTFM >nul&cscript //nologo ospp.vbs /unpkey:BTDRB >nul&cscript //nologo ospp.vbs /unpkey:CPQVG >nul&cscript //nologo ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99 >nul&set i=1
+          :server
+          if %i%==1 set KMS_Sev=kms7.MSGuides.com
+          if %i%==2 set KMS_Sev=kms8.MSGuides.com
+          if %i%==3 set KMS_Sev=kms9.MSGuides.com
+          if %i%==4 goto notsupported
+          cscript //nologo ospp.vbs /sethst:%KMS_Sev% >nul&echo ============================================================================&echo.&echo.
+          cscript //nologo ospp.vbs /act | find /i "successful" && (echo.&echo ============================================================================&echo.&echo #My official blog: MSGuides.com&echo.&echo #How it works: bit.ly/kms-server&echo.&echo #Please feel free to contact me at msguides.com@gmail.com if you have any questions or concerns.&echo.&echo #Please consider supporting this project: donate.msguides.com&echo #Your support is helping me keep my servers running everyday!&echo.&echo ============================================================================&choice /n /c YN /m "Would you like to visit my blog [Y,N]?" & if errorlevel 2 exit) || (echo The connection to my KMS server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
+          explorer "http://MSGuides.com"&goto halt
+          :notsupported
+          echo.&echo ============================================================================&echo Sorry! Your version is not supported.&echo Please try installing the latest version here: bit.ly/downloadmsp
+          :halt
+          pause
+      </textarea
+        >
+        <button id="HTMLButton">Copy Codes</button>
+      </div>
+    </div>
+    <p><img src="img/1.png" alt=""></p>
+    <p>Step 3: Then you create a new text document.</p>
+    <p><img src="img/2.png" alt=""></p>
+    <p>Step 4: Paste the code into the text file. Then you choose “Save As” to save it as a batch file (named eg:“activate.cmd”).</p>
+    <p><img src="img/3.png" alt=""></p>
+    <p>Step 5: Run the batch file as administrator.</p>
+    <p><img src="img/6.png" alt=""></p>
+    <p>Step 6: Please wait…</p>
+    <p><img src="https://office-activator.com/wp-content/uploads/2020/04/office-2016-for-free-10-1.png" alt=""></p>
+    <p>Check the activation status again.</p>
+   
+    
+      
+    
+    
+    <h2 class="category">2019</h2>
+    <div class="title">same like step follow 2016</div>
+    
+    <p class="post-decription">
+      <div class="text-boxes">
+        <div class="text-box CSSBox">
+          <div class="topic">CMD Code:</div>
+          <textarea id="CSSBox" readonly>
+            @echo off
+            title Activate Office 2019 ALL versions for FREE!&cls&echo ============================================================================&echo #Project: Activating Microsoft software products for FREE without software&echo ============================================================================&echo.&echo #Supported products:&echo - Microsoft Office Standard 2019&echo - Microsoft Office Professional Plus 2019&echo.&echo.&(if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16")&(if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16")&(for /f %%x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&(for /f %%x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&echo.&echo ============================================================================&echo Activating your Office...&cscript //nologo ospp.vbs /unpkey:6MWKP >nul&cscript //nologo ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP >nul&set i=1
+            :server
+            if %i%==1 set KMS_Sev=kms7.MSGuides.com
+            if %i%==2 set KMS_Sev=kms8.MSGuides.com
+            if %i%==3 set KMS_Sev=kms9.MSGuides.com
+            if %i%==4 goto notsupported
+            cscript //nologo ospp.vbs /sethst:%KMS_Sev% >nul&echo ============================================================================&echo.&echo.
+            cscript //nologo ospp.vbs /act | find /i "successful" && (echo.&echo ============================================================================&echo.&echo #My official blog: MSGuides.com&echo.&echo #How it works: bit.ly/kms-server&echo.&echo #Please feel free to contact me at msguides.com@gmail.com if you have any questions or concerns.&echo.&echo #Please consider supporting this project: donate.msguides.com&echo #Your support is helping me keep my servers running everyday!&echo.&echo ============================================================================&choice /n /c YN /m "Would you like to visit my blog [Y,N]?" & if errorlevel 2 exit) || (echo The connection to my KMS server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
+            explorer "http://MSGuides.com"&goto halt
+            :notsupported
+            echo.&echo ============================================================================&echo Sorry! Your version is not supported.&echo Please try installing the latest version here: bit.ly/aiomsp
+            :halt
+            pause >nul
+        </textarea
+          >
+          <button id="CSSButton">Copy Codes</button>
+        </div>
+      </div>
+    </p>
+      
+      
+      
+      
+      
+   
+      
+  
+  <h2 class="category">2021</h2>
+  <div class="title">Easy Methods to Activate Office 2021</div>
+  
+  <p class="post-decription">Step 1:cmd open run administrator</p>
+  <p><img src="img/7.png" alt=""></p>
+  <p>Step 2:copy code step by step</p>
+  <p><div class="text-boxes">
+    <div class="text-box JSBox">
+      <div class="topic">CMD Code:</div>
+      <textarea id="JSBox" readonly>
+
+cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
+
+    </textarea
+      >
+      <button id="JSButton">Copy Codes</button>
+    </div>
+  </div></p>
+ 
+  <p><img src="img/8.png" alt=""></p>
+  <p><div class="text-boxes">
+    <div class="text-box HTML1Box">
+      <div class="topic">CMD Code:</div>
+      <textarea id="HTML1Box" readonly>
+    
+cd /d %ProgramFiles%\Microsoft Office\Office16
+
+    </textarea
+      >
+      <button id="HTML1Button">Copy Codes</button>
+    </div>
+  </div></p>
+  <p><img src="img/9.png" alt=""></p>
+  <p><div class="text-boxes">
+    <div class="text-box HTML2Box">
+      <div class="topic">CMD Code:</div>
+      <textarea id="HTML2Box" readonly>
+      
+
+
+for /f %x in ('dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+
+
+    </textarea
+      >
+      <button id="HTML2Button">Copy Codes</button>
+    </div>
+  </div></p>
+  <p><img src="img/11.png" alt=""></p>
+  <p><div class="text-boxes">
+    <div class="text-box HTML3Box">
+      <div class="topic">CMD Code:</div>
+      <textarea id="HTML3Box" readonly>
+cscript ospp.vbs /setprt:1688
+cscript ospp.vbs /unpkey:6F7TH >nul
+cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
+cscript ospp.vbs /sethst:e8.us.to
+cscript ospp.vbs /act
+    </textarea
+      >
+      <button id="HTML3Button">Copy Codes</button>
+    </div>
+  </div></p>
+  <p><img src="img/13.png" alt=""></p>
+  <p>Check the activation status again.</p>
+    
+      
+  
+ 
+  <div class="title">This code use can activate 2016 same like 2021</div>
+
+
+  <p><div class="text-boxes">
+    <div class="text-box HTML4Box">
+      <div class="topic">CMD Code:</div>
+      <textarea id="HTML4Box" readonly>
+ %ProgramFiles%\Microsoft Office\Office16
+
+ %ProgramFiles(x86)%\Microsoft Office\Office16
+
+ for /f %x in ('dir /b ..\root\Licenses16\proplusvl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+   
+cscript ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
+cscript ospp.vbs /unpkey:BTDRB >nul
+cscript ospp.vbs /unpkey:KHGM9 >nul
+cscript ospp.vbs /unpkey:CPQVG >nul
+cscript ospp.vbs /sethst:kms8.msguides.com
+cscript ospp.vbs /setprt:1688
+cscript ospp.vbs /act
+        </textarea
+      >
+      <button id="HTML4Button">Copy Codes</button>
+    </div>
+  </div></p>
+    </div>
+</div>
+
+
+<footer class="footer">
+	<h1>CIE 12 BLOG</h1>
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Details</h4>
+  	 			<ul>
+  	 				<li><a href="about.html">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="profile.html">Members</a></li>
+  	 		
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Quick link</h4>
+  	 			<ul>
+  	 				<li><a href="blog.html">Home</a></li>
+  	 				<li><a href="333.html">Blog</a></li>
+  	 				<li><a href="login.html">login</a></li>
+  	 				
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Free option</h4>
+  	 			<ul>
+  	 				<li><a href="gamecard.html">Game</a></li>
+  	 				<li><a href="music.html">Music</a></li>
+  	 				<li><a href="#">presentation</a></li>
+             <li> <div id="google_translate_element"></div>
+              <script>
+                 function googleTranslateElementInit() {
+                    var translator = new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,ta,si,ja,zh-CN,ko',
+
+                 }, 'google_translate_element');
+              }
+              </script>
+              <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/profile.php?id=100088516644408&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+  	 			  <a href="https://www.tiktok.com/@w.h.d.r?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+             <a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+          
+          </div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+  <script>
+    var content = document.getElementsByTagName('body')[0];
+    var darkMode = document.getElementById('dark-change');
+    darkMode.addEventListener('click', function(){
+        darkMode.classList.toggle('active');
+        content.classList.toggle('night');
+    })
+</script>
+
+
+  <script>
+    const toggleBtn =document.querySelector('.toggle_btn')
+    const toggleBtnIcon =document.querySelector('.toggle_btn i')
+    const dropDownMenu =document.querySelector('.dropdown_menu')
+
+     toggleBtn.onclick = function name(params){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+         toggleBtnIcon.classList =isOpen
+         ? 'fa-solid fa-xmark'
+         : 'fa-solid fa-bars'
+     }
+   
+</script>
+  
+
+    <script>
+      // HTML BOx JS Code
+      let HTMLBox = document.getElementById("HTMLBox");
+      let HTMLButton = document.getElementById("HTMLButton");
+
+      HTMLButton.onclick = function () {
+        HTMLBox.select();
+        document.execCommand("copy");
+        HTMLButton.innerText = "Codes Copied";
+      };
+
+      // CSS Box Js Code
+      let CSSBox = document.getElementById("CSSBox");
+      let CSSButton = document.getElementById("CSSButton");
+
+      CSSButton.onclick = function () {
+        CSSBox.select();
+        document.execCommand("copy");
+        CSSButton.innerText = "Codes Copied";
+      };
+      // JavaScript BOx JS Code
+      let JSBox = document.getElementById("JSBox");
+      let JSButton = document.getElementById("JSButton");
+
+      JSButton.onclick = function () {
+        JSBox.select();
+        document.execCommand("copy");
+        JSButton.innerText = "Codes Copied";
+      };
+      
+      let HTML1Box = document.getElementById("HTML1Box");
+      let HTML1Button = document.getElementById("HTML1Button");
+
+      HTML1Button.onclick = function () {
+        HTML1Box.select();
+        document.execCommand("copy");
+        HTML1Button.innerText = "Codes Copied";
+      };
+      let HTML2Box = document.getElementById("HTML2Box");
+      let HTML2Button = document.getElementById("HTML2Button");
+
+      HTML2Button.onclick = function () {
+        HTML2Box.select();
+        document.execCommand("copy");
+        HTML2Button.innerText = "Codes Copied";
+      };
+      let HTML3Box = document.getElementById("HTML3Box");
+      let HTML3Button = document.getElementById("HTML3Button");
+
+      HTML3Button.onclick = function () {
+        HTML3Box.select();
+        document.execCommand("copy");
+        HTML3Button.innerText = "Codes Copied";
+      };
+      let HTML4Box = document.getElementById("HTML4Box");
+      let HTML4Button = document.getElementById("HTML4Button");
+
+      HTML4Button.onclick = function () {
+        HTML4Box.select();
+        document.execCommand("copy");
+        HTML4Button.innerText = "Codes Copied";
+      };
+      
+    </script>
+
+<script src = "script.js"></script>
+
+    <script src="333.js"></script>
+</body>
+</html>
