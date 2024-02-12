@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <LInk rel="shortcut icon" type="x-icon" href="logo.png"></LInk>
+    
+    <link 
+     rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer"
+      />
+    <link rel="stylesheet" href="css/blog.css" 
+    />
+    <title>CIE BLOG</title>
+</head>
+<header>
+  <img src="logo.png" class="lpng">
+    
+   <div class="navbar"> 
+    <div class="container">
+     <div class="clock">
+      <span id="hrs">00</span>
+      <span>:</span>
+      <span id="min">00</span>
+      <span>:</span>
+      <span id="sec">00</span>
+    </div>
+    </div>
+       <div class="logo"><a>IE 12</a> <b> BLOG</b></div>
+        <ul class="links">
+            <li><a href="blog.html">Home</a></li>
+            <li><a href="333.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+        <a href="login.html" class="action_btn">login</a>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        
+   </div> 
+   <div class="dropdown_menu">
+   <li><a href="blog.html">Home</a></li>
+   <li><a href="333.html">Blog</a></li>
+   <li><a href="about.html">About</a></li>
+   <li><a href="contact">Contact</a></li>
+   <li><a href="login.html" class="action_btn">Login</a></li>
+</div> 
+
+</header>
+<main>
+
+    <section id="hero">
+        <h1>WELCOME</h1>
+        <p>"Your work is going to fill a large part of your life, <br/> the only way to be truly satisfied is to do what you believe is great work.<br/> And the only way to do great work is to love what you do. If you haven't found it yet, keep looking.<br/> Don't settle. As with all matters of the heart"</p>
+    </section>
+</main>
+<script>
+    const toggleBtn =document.querySelector('.toggle_btn')
+    const toggleBtnIcon =document.querySelector('.toggle_btn i')
+    const dropDownMenu =document.querySelector('.dropdown_menu')
+
+     toggleBtn.onclick = function name(params){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+         toggleBtnIcon.classList =isOpen
+         ? 'fa-solid fa-xmark'
+         : 'fa-solid fa-bars'
+     }
+      
+   let hrs = document.getElementById("hrs");  
+   let min = document.getElementById("min"); 
+   let sec = document.getElementById("sec"); 
+
+   setInterval(() => {
+    let currentTime = new Date();
+     hrs.innerHTML = currentTime.getHours();
+     min.innerHTML = currentTime.getMinutes();
+     sec.innerHTML = currentTime.getSeconds();
+    
+   }, 1000);
+
+</script>
+<body> 
+       
+
+</body>
+</html>
